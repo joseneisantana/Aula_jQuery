@@ -13,9 +13,17 @@
 
 header{
     background-color:#192a56 ;
-    padding: 16px 0;
+    padding-top: 16px 0;
     color:#fff;
 }
+header > .container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-bottom: 16px;
+
+}
+
 
 nav{
     background-color: #575fcf;
@@ -29,4 +37,19 @@ margin-right: 16px;
 font-size: 18px;
 font-weight: bold;
 text-transform:uppercase ;
+}
+nav li a{
+    color:#fff;
+    text-decoration: none;
+
+}
+.menu-hambuerger{
+    width: 32px;
+}
+.menu-hambuerger span{
+   height: 2px;
+   width: 100%;
+   background-color:#fff ;
+   display: block;
+   margin-bottom: 4px;
 }
