@@ -15,7 +15,7 @@
     <header>
         <div class="container">
         <h1>Ney Motors</h1>
-        <div class="menu-hambuerger">
+        <div class="menu-hamburger">
          <span></span>
          <span></span>
          <span></span>
@@ -57,6 +57,10 @@
     $('#carossel-imagens').slick({
         autoplay:true,
     });
+
+    $('.menu-hamburger').click(function(){
+        $('nav').slideToggle();
+    })
 })
 </script>
 
