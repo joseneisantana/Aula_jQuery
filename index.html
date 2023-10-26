@@ -191,7 +191,7 @@
             </ul>
         </div>
     </section>
-    <section >
+    <section id="contato" >
      <div class="container">
         <h2>Entre em contato</h2>
         <form>
@@ -212,7 +212,7 @@
 
             <div class="form-campo">
                  <label for="veiculos-interesse">Veículo de Iteresse:</label>
-                 <input type="text" id="veiculo-interesse" name="veiculo-interesse">
+                 <input type="text" id="veiculo-interesse" name="veiculoDenteresse">
             </div>
            <div class="form-campo">
                  <label for="mensagem">Mensagem:</label>
@@ -253,39 +253,7 @@
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/messages_pt_BR.min.js"></script>
 				
-<script>
-    $(document).ready(function(){
-    $('#carossel-imagens').slick({
-        autoplay:true,
-    });
-
-    $('.menu-hamburger').click(function(){
-        $('nav').slideToggle();
-    })
-        
-    $('#telefone').mask('(00)00000-0000')
-
-    $('form').validate({
-        rules:{
-            nome:{
-                required: true
-            },
-           email:{
-                required:true, 
-                email:true
-            },
-            telefone:{
-                required:true
-            }
-        },
-        messages:{
-            nome:'Por favor, insira seu nome '
-        },
-    })
-    
-})
-
-</script>
+<script src="./js/main.js"></script>
 
 </body>
 </html>
